@@ -1,12 +1,14 @@
 class RecipeCard extends HTMLElement {
   constructor() {
     // Part 1 Expose - TODO
-
     // You'll want to attach the shadow DOM here
+    super();
+    
   }
 
   set data(data) {
     // This is the CSS that you'll use for your recipe cards
+    var shadow = this.attachShadow({mode: 'open'});
     const styleElem = document.createElement('style');
     const styles = `
       * {
@@ -83,7 +85,7 @@ class RecipeCard extends HTMLElement {
         font-size: 12px;
       }
     `;
-    styleElem.innerHTML = style;
+    styleElem.innerHTML = styles;
 
     // Here's the root element that you'll want to attach all of your other elements to
     const card = document.createElement('article');
@@ -100,6 +102,83 @@ class RecipeCard extends HTMLElement {
     // created in the constructor()
 
     // Part 1 Expose - TODO
+
+    var graphArray = searchForKey(data, '@graph');
+    const image = document.createElement('img');
+    image.setAttribute('alt', '');
+    image.setAttribute('src', '');
+    const p1 = document.createElement('p');
+    p1.setAttribute('class', 'title');
+    const a = document.createElement('a');
+    p1.appendChild(a);
+    const p2 = document.createElement('p');
+    p2.setAttribute('class', 'organization');
+    const div = document.createElement('div');
+    div.setAttribute('class', 'rating');
+    const span = document.createElement('span');
+    
+    div.appendChild(span);
+
+    if(graphArray.length>1){
+      const image2 = document.createElement('img');
+      image2.setAttribute('src','');
+      image2.setAttribute('alt','');
+      const span2 = document.createElement('span');
+      div.appendChild(image2);
+      div.appendChild(span2);
+      image.src = graphArray[2].url;
+      var rating = graphArray[graphArray.length-1].aggregateRating.ratingValue;
+      span.textContent=rating;
+      var ratingCount = graphArray[graphArray.length-1].aggregateRating.ratingCount;
+      span2.textContent='('+ratingCount+')';
+      var ratingRound = Math.round(rating);
+      image2.alt = ratingRound + " stars";
+      image2.src = "/assets/images/icons/"+ratingRound+"-star.svg";
+      
+    }
+    else{
+      image.src = data.image.url;
+      span.textContent="No Reviews";
+    }
+    const time = document.createElement('time');
+    const p3 = document.createElement('p');
+    p3.setAttribute('class', 'ingredients');
+    card.appendChild(image);
+    card.appendChild(p1);
+    card.appendChild(p2);
+    card.appendChild(div);
+    card.appendChild(time);
+    card.appendChild(p3);
+    shadow.appendChild(styleElem);
+    shadow.appendChild(card);    
+    
+
+    const ArticleURL = getUrl(data);
+    a.setAttribute('href', ArticleURL);
+    var name=searchForKey(data, 'headline');
+    a.textContent = name;
+    p2.textContent=getOrganization(data);
+    
+    
+    var totalTime;
+    if(graphArray.length>1){
+      totalTime = graphArray[graphArray.length-1].totalTime;
+    }
+    else {
+      totalTime = data.totalTime;
+    }
+    var timeConverted = convertTime(totalTime);
+    time.textContent=timeConverted;
+
+    var ingredientArr;
+    if(graphArray.length>1){
+      ingredientArr = graphArray[graphArray.length-1].recipeIngredient;
+    }
+    else {
+      ingredientArr = data.recipeIngredient;
+    }
+    var IngredientList = createIngredientList(ingredientArr);
+    p3.textContent=IngredientList;
   }
 }
 
