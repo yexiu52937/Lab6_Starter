@@ -133,7 +133,7 @@ class RecipeCard extends HTMLElement {
       span2.textContent='('+ratingCount+')';
       var ratingRound = Math.round(rating);
       image2.alt = ratingRound + " stars";
-      image2.src = "https://yexiu52937.github.io/Lab6_Starter/assets/images/icons/"+ratingRound+"-star.svg";
+      image2.src = "assets/images/icons/"+ratingRound+"-star.svg";
     }
     else if(graphArray.length>1){
       const image2 = document.createElement('img');
@@ -149,7 +149,7 @@ class RecipeCard extends HTMLElement {
       span2.textContent='('+ratingCount+')';
       var ratingRound = Math.round(rating);
       image2.alt = ratingRound + " stars";
-      image2.src = "https://yexiu52937.github.io/Lab6_Starter/assets/images/icons/"+ratingRound+"-star.svg";
+      image2.src = "assets/images/icons/"+ratingRound+"-star.svg";
       
     }
     else{
