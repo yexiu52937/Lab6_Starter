@@ -3,12 +3,12 @@ class RecipeCard extends HTMLElement {
     // Part 1 Expose - TODO
     // You'll want to attach the shadow DOM here
     super();
-    var shadow;
+    this.attachShadow({mode:'open'});
   }
 
   set data(data) {
     // This is the CSS that you'll use for your recipe cards
-    var shadow = this.attachShadow({mode: 'open'});
+    //var shadow = this.attachShadow({mode: 'open'});
     const styleElem = document.createElement('style');
     const styles = `
       * {
@@ -165,8 +165,8 @@ class RecipeCard extends HTMLElement {
     card.appendChild(div);
     card.appendChild(time);
     card.appendChild(p3);
-    shadow.appendChild(styleElem);
-    shadow.appendChild(card);    
+    this.shadowRoot.appendChild(styleElem);
+    this.shadowRoot.appendChild(card);    
     
 
     const ArticleURL = getUrl(data);
