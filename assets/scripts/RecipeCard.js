@@ -3,7 +3,7 @@ class RecipeCard extends HTMLElement {
     // Part 1 Expose - TODO
     // You'll want to attach the shadow DOM here
     super();
-    
+    var shadow;
   }
 
   set data(data) {
@@ -119,7 +119,23 @@ class RecipeCard extends HTMLElement {
     
     div.appendChild(span);
 
-    if(graphArray.length>1){
+    if(graphArray==undefined){
+      image.src = data.image[0].url;
+      const image2 = document.createElement('img');
+      image2.setAttribute('src','');
+      image2.setAttribute('alt','');
+      const span2 = document.createElement('span');
+      div.appendChild(image2);
+      div.appendChild(span2);
+      var rating = data.aggregateRating.ratingValue;
+      span.textContent=rating;
+      var ratingCount = data.aggregateRating.ratingCount;
+      span2.textContent='('+ratingCount+')';
+      var ratingRound = Math.round(rating);
+      image2.alt = ratingRound + " stars";
+      image2.src = "/assets/images/icons/"+ratingRound+"-star.svg";
+    }
+    else if(graphArray.length>1){
       const image2 = document.createElement('img');
       image2.setAttribute('src','');
       image2.setAttribute('alt','');
@@ -161,7 +177,10 @@ class RecipeCard extends HTMLElement {
     
     
     var totalTime;
-    if(graphArray.length>1){
+    if(graphArray==undefined){
+      totalTime = data.totalTime;
+    }
+    else if(graphArray.length>1){
       totalTime = graphArray[graphArray.length-1].totalTime;
     }
     else {
@@ -171,7 +190,10 @@ class RecipeCard extends HTMLElement {
     time.textContent=timeConverted;
 
     var ingredientArr;
-    if(graphArray.length>1){
+    if(graphArray==undefined){
+      ingredientArr = data.recipeIngredient;
+    }
+    else if(graphArray.length>1){
       ingredientArr = graphArray[graphArray.length-1].recipeIngredient;
     }
     else {

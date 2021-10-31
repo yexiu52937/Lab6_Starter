@@ -1,0 +1,191 @@
+				
+{
+"@context": "http://schema.org",
+
+"@type": ["Recipe"]
+,"headline": "Mojito"
+,"datePublished": "2017-03-15T07:01:35.000-04:00"
+,"dateModified": "2020-11-02T00:44:23.145-05:00"
+,"author": [
+{"@type": "Person"
+,"name": "Liquor.com"
+,"description": "Liquor.com has been serving drinks enthusiasts and industry professionals since 2009. Our writers are some of the most respected in the industry, and our recipes are contributed by bartenders who form a veritable &#34;Who&#39;s Who&#34; of the cocktail world."
+,"sameAs": [
+"https://www.liquor.com/liquor-com-5196141"
+]
+}
+]
+,"description": "The Mojito might be the perfect cocktail. With mint, simple syrup and white rum, the classic Mojito is easy to make and always refreshing."
+,"image": [
+{
+"@type": "ImageObject",
+"url": "https://www.liquor.com/thmb/QVPw5pJHvg1oDwSMHOgVnaAU-B4=/720x405/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__09__04153106__mojito-720x720-recipe-a55b114fc99c4a64b38c9ef6d1660e20.jpg",
+"height": 405,
+"width": 720
+},
+{
+"@type": "ImageObject",
+"url": "https://www.liquor.com/thmb/1mfz_Z3Y4jYze4EY9_xs0OvUMHc=/720x540/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__09__04153106__mojito-720x720-recipe-a55b114fc99c4a64b38c9ef6d1660e20.jpg",
+"height": 540,
+"width": 720
+},
+{
+"@type": "ImageObject",
+"url": "https://www.liquor.com/thmb/-ulo6Zz348ge2yQBi8WHyEw193Q=/720x720/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__09__04153106__mojito-720x720-recipe-a55b114fc99c4a64b38c9ef6d1660e20.jpg",
+"height": 720,
+"width": 720
+}
+]
+,"video": {
+"@type": "VideoObject",
+"contentUrl": "https://cdn.jwplayer.com/videos/5Lh1vXJX-Cttr5AOn.mp4",
+"description": "This video will show you how to make a Mojito. To many people, the Mojito represents the perfect rum cocktail. The origins of the drink can be traced back to Cuba and the 16th-century Cuban cocktail El Draque, named for Sir Francis Drake.\r\nAppropriately, almost all of the ingredients in the Mojito are indigenous to Cuba. Rum, lime, mint and sugar (derived from cane juice) are mixed with soda water to create a refreshing classic cocktail.",
+"duration": "PT32S",
+"name": "How to Make a Mojito",
+"thumbnailUrl": "https://cdn.jwplayer.com/v2/media/5Lh1vXJX/poster.jpg?width=720",
+"uploadDate": "2020-03-02T22:49:26.408Z"}
+,"publisher": {
+"@type": "Organization",
+"name": "Liquor.com",
+"url": "https://www.liquor.com",
+"logo": {
+"@type": "ImageObject",
+"url": "https://www.liquor.com/thmb/YcVGwdJUfYykMgSl-KZXO7F7-TA=/778x180/filters:no_upscale():max_bytes(150000):strip_icc()/LiquorLogoCognac-5e62f050d16d4256880e263b64147883.png",
+"width": 778,
+"height": 180
+},
+"brand": "Liquor.com"
+, "publishingPrinciples": "https://www.liquor.com/about-us-4782181#editorial-guidelines"
+}
+,"name": "Mojito"
+,"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.4",
+"ratingCount": "313"
+}
+,"cookTime": "PT0M"
+,"nutrition": {
+"@type": "NutritionInformation"
+,"calories": "215 kcal"
+,"carbohydrateContent": "27 g"
+,"cholesterolContent": "0 mg"
+,"fiberContent": "4 g"
+,"proteinContent": "1 g"
+,"saturatedFatContent": "0 g"
+,"sodiumContent": "6 mg"
+,"sugarContent": "12 g"
+,"fatContent": "0 g"
+,"unsaturatedFatContent": "0 g"
+}
+,"prepTime": "PT5M"
+,"recipeIngredient": [
+"3 mint leaves",
+"1/2 ounce simple syrup",
+"2 ounces white rum",
+"3/4 ounce lime juice, freshly squeezed",
+"Club soda, to top",
+"Garnish: mint sprig",
+"Garnish: lime wheel" ]
+,"recipeInstructions": [
+{
+"@type": "HowToStep"
+,"text": "Lightly muddle the mint with the simple syrup in a shaker."
+} ,{
+"@type": "HowToStep"
+,"text": "Add the rum, lime juice and ice, and give it a brief shake."
+} ,{
+"@type": "HowToStep"
+,"text": "Strain into a highball glass over fresh ice."
+} ,{
+"@type": "HowToStep"
+,"text": "Top with the club soda."
+} ,{
+"@type": "HowToStep"
+,"text": "Garnish with a mint sprig and lime wheel."
+} ]
+,"recipeYield": "1"
+,"totalTime": "PT5M"
+,"review": [
+{
+"@type": "Review",
+"author": {
+"@type": "Person",
+"name": "MPO"
+},
+"reviewBody": "I would say a splash of club soda. Too much dilutes the drink and takes away from the flavor."
+}
+,
+{
+"@type": "Review",
+"author": {
+"@type": "Person",
+"name": "soveery"
+},
+"reviewBody": "White sugar okay? I’d prefer that to having to make up a bottle of simple syrup."
+}
+,
+{
+"@type": "Review",
+"author": {
+"@type": "Person",
+"name": "Marcy"
+},
+"reviewBody": "Mohito cocktail is great. I tweaked it.\nI added in place of regular rum. I used Caribbean coconut rum, and I also took a Serrano 1 slice cut into fourths, and added it with the mint & muddled the two with simple syrup” Home made” and only use fresh lime juice! I love growing my own mint, limes, & lemons for some amazing cocktails!! Yes we grow our own peppers too ❤️ Enjoy"
+}
+,
+{
+"@type": "Review",
+"author": {
+"@type": "Person",
+"name": "Will"
+},
+"reviewBody": "I had a box of mint tea I wasn't using, and everytime I buy mint at the store it goes bad so fast. So I took a bunch of the mint tea bags and made some super strong \"mint water\" then I use the water to make simple syrup. Now I just skip the mint leaf and use my mint simple syrup to mix up a quick mojito. And the shelf life is great."
+}
+,
+{
+"@type": "Review",
+"author": {
+"@type": "Person",
+"name": "Doug Harlow"
+},
+"reviewBody": "where to find Mojito Mint leaves for mojito drinks"
+}
+]
+,"mainEntityOfPage": {
+"@type": ["WebPage"]
+,"@id": "https://www.liquor.com/recipes/mojito/"
+,"breadcrumb": {
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"item": {
+"@id": "https://www.liquor.com/cocktail-by-spirit-4779438",
+"name": "By Spirit"
+}
+}
+,
+{
+"@type": "ListItem",
+"position": 2,
+"item": {
+"@id": "https://www.liquor.com/rum-cocktails-4779434",
+"name": "Rum Cocktails"
+}
+}
+,
+{
+"@type": "ListItem",
+"position": 3,
+"item": {
+"@id": "https://www.liquor.com/recipes/mojito/",
+"name": "The Mojito Is the Ultimate Warm-Weather Cocktail"
+}
+}
+]
+}
+}
+, "about": [
+]		
+}
